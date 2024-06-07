@@ -1,0 +1,2 @@
+# QMS
+Qurbani Management System
