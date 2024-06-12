@@ -7,21 +7,23 @@
   <title>QMS</title>
   <!-- MDB icon -->
   <link rel="icon" href="img/cow.ico" type="image/x-icon" />
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-  <!-- Google Fonts Roboto -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"rel="stylesheet"/>
   <!-- MDB -->
-  <link rel="stylesheet" href="css/mdb.min.css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.1/mdb.min.css"rel="stylesheet"/>
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container" style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');">
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+ 
+  <div class="container "   style="background-image: url('https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp');">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light navbar fixed-top">
-      <div class="container">
+    <nav class="navbar navbar-expand-md navbar-light bg-light navbar fixed-top ">
+      <div class="container ">
         <a class="navbar-brand" href="#">
           <img id="logo" src="img/cow.ico" alt="cow">
         </a>
@@ -55,15 +57,42 @@
               <a class="nav-link" href="./forms/Blochistan.html">Balochistan</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" target="_blank" href="./forms/kashmir.html">Kashmir</a>
+              <a class="nav-link" href="./forms/kashmir.html">Kashmir</a>
             </li>
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                data-mdb-dropdown-init
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                aria-expanded="false"
+              >
+                Shubjaat link
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li>
+                  <a class="dropdown-item" href="#jmt">jamiatul Madina</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#mtm">Madrasa tul madina</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#fzm">Faizan e madina</a>
+                </li>
+              </ul>
+            </li>
+            
           </ul>
+          
         </div>
       </div>
     </nav>
     <!-- Main content -->
-    <h1 style="color: aliceblue;">Qms Report</h1>
-    <div class="row">
+   
+    <h1 class="mt-5" style="color: aliceblue; ">Qms Report</h1>
+    <div class="row ">
       <!-- Pakistan -->
       <div class="col-xl-12">
         <div class="thumbnail">
@@ -79,9 +108,76 @@
       <div class="col-xl-12">
         <div class="thumbnail">
           <a href="img/2024 -QMS_page-0002.jpg" target="_blank">
-            <img  src="img/2024 -QMS_page-0002.jpg" alt="Nature" style="width:100%">
+            <img  src="img/2024 -QMS_page-0002.jpg"  alt="Nature" style="width:100%">
             <div class="caption">
               <h2>Slide 2.</h2>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- جامعۃ المدینہ -->
+      <div class="col-xl-12">
+        <div class="thumbnail">
+          <a href="img/2024 -QMS_page-0046.jpg" target="_blank">
+            <img id="jmt"  src="img/2024 -QMS_page-0046.jpg" alt="Nature" style="width:100%">
+            <div class="caption">
+              <h2>Slide 3.</h2>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- مدرسۃ المدینہ-->
+      <div class="col-xl-12">
+        <div class="thumbnail">
+          <a href="img/2024 -QMS_page-0047.jpg" target="_blank">
+            <img id="mtm"  src="img/2024 -QMS_page-0047.jpg" alt="Nature" style="width:100%">
+            <div class="caption">
+              <h2>Slide 4.</h2>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- ائمہ مساجد-->
+      <div class="col-xl-12">
+        <div class="thumbnail">
+          <a href="img/2024 -QMS_page-0048.jpg" target="_blank">
+            <img  src="img/2024 -QMS_page-0048.jpg" alt="Nature" style="width:100%">
+            <div class="caption">
+              <h2>Slide 5.</h2>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!--  فیضان مدینہ -->
+      <div class="col-xl-12">
+        <div class="thumbnail">
+          <a href="img/2024 -QMS_page-0049.jpg" target="_blank">
+            <img  id="fzm" src="img/2024 -QMS_page-0049.jpg" alt="Nature" style="width:100%">
+            <div class="caption">
+              <h2>Slide 6.</h2>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!--  اجتماعی قربانی -->
+      <div class="col-xl-12">
+        <div class="thumbnail">
+          <a href="img/2024 -QMS_page-0050.jpg" target="_blank">
+            <img  src="img/2024 -QMS_page-0050.jpg" alt="Nature" style="width:100%">
+            <div class="caption">
+              <h2>Slide 7.</h2>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!--   فیضان آن لائن اکیڈمی -->
+      <div class="col-xl-12">
+        <div class="thumbnail">
+          <a href="img/2024 -QMS_page-0051.jpg" target="_blank">
+            <img  src="img/2024 -QMS_page-0051.jpg" alt="Nature" style="width:100%">
+            <div class="caption">
+              <h2>Slide 8.</h2>
             </div>
           </a>
         </div>
@@ -93,7 +189,8 @@
   <!-- Bootstrap JavaScript and dependencies -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
-
+ <!-- MDB -->
+<script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.1/mdb.umd.min.js"></script>
   <!-- Custom JavaScript -->
   <script>
     // JavaScript to close the navbar when a link is clicked
@@ -105,6 +202,13 @@
         }
       });
     });
+
+    // Initialization for ES Users
+import { Dropdown, initMDB } from "mdb-ui-kit";
+
+initMDB({ Dropdown });
+ 
   </script>
+  <script src="qms"></script>
 </body>
 </html>
